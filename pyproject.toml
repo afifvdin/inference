@@ -1,0 +1,27 @@
+[project]
+name = "inference"
+version = "0.1.0"
+description = "Local inference"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.118.0",
+    "gensim>=4.3.3",
+    "nltk>=3.9.2",
+    "numpy>=1.26.4",
+    "pandas>=2.3.3",
+    "pydantic>=2.11.9",
+    "ruff>=0.13.3",
+    "scalar-fastapi>=1.4.3",
+    "tensorflow>=2.18.1",
+    "uvicorn>=0.37.0",
+]
+
+[tool.ruff]
+line-length = 120
+lint.select = [
+    "E", # pycodestyle errors
+    "W", # pycodestyle warnings
+    "F", # flake8 errors
+    "I", # isort errors
+]
